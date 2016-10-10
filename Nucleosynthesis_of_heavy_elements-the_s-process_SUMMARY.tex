@@ -11,10 +11,13 @@
 \usepackage{listings}
 \usepackage{parskip}
 \usepackage[small,bf]{caption}
+\usepackage{nuc} %nuclear symbols \Pa{231}
+%\usepackage[version=3]{mhchem} for kjemiskte symboler \ce{^{227}_{90}Th+} eller \ce{SO4^2-}
+
 % \usepackage{bm} for bold formler(vektor)
 
 
-\def\thesubsection{\arabic{section}.\alph{subsection}}
+%\def\thesubsection{\arabic{section}.\alph{subsection}}
 
 % to get æ ø å in listings
 \lstset{literate=%
@@ -33,16 +36,63 @@
 \usepackage{mathpazo}
 \bibliographystyle{plain}
 
-\title{Nucleosynthesis of heavy elements: the s-process \
-Summary}
+\title{\Huge{\textbf{Summary}} \newline \Large{Nucleosynthesis of heavy elements: the s-process}}
 \author{Ina K. B. Kullmann}
 \date{\today}
 \begin{document}
 
 \maketitle
 
-\section{ }
-\subsection{ }
+\section*{Chapter 1.7.4: $\gamma$-ray Transistions in a Stellar Plasma}
+Excited states are thermally populated. Since the timescale for excitation and de-excitation considerably shorter than the stellar hydrodynamic timescales these excited levels participate in nuclear reactions and $\beta$-decay. 
+
+The number density $N_{\mu}$ of nuclei in excited state $\mu$ divided by the total number density of nuclei $N$ is given by a Boltzmann distrubution:
+
+\begin{equation}
+P_\mu = \frac{N_\mu}{N} = \frac{g_\mu e^{-E_\mu/kT}}{\sum_\mu g_\mu e^{-E_\mu/kT}} = \frac{g_\mu e^{-E_\mu/kT}}{G}
+\end{equation}
+(Assume nondegenerate plasma in thermodynamic equilibrium.)
+what is P? the prob that occupies the excited state $\mu$? G is partition function
+
+Thermally excited levels more important (higher prob.) with increasing temperature and lower excitation energy. 
+
+\section*{Chapter 1.7.5: Isomeric States and the Case of \Al{26}}
+Half lives ($\gamma$) 
+\begin{itemize}
+\item Non-isomers: $< 10^{-9}$ s
+\item Isomeric/metastable states: isomers: sec, min, days
+\end{itemize}
+
+Caused by:
+\begin{enumerate}
+\item Large difference in spins between the states (large multipolarity, M4, E5)
+\item Relatively small energy difference between levels (small $\gamma$-ray energy)
+\end{enumerate}
+both tend to reduce the decay probability.
+
+\textbf{Ex:} \\
+\Al{26} have a isomeric state that would recquire M5 rediation to de-excite to the ground state. More likely the isomeric state can decay by $\beta$-emission to \Mg{26}. Ground state of \Al{26} is also $\beta$-unstable and decays to an excites state of \Mg{26}.
+
+The excited state of \Mg{26} de-excites so quicly that if it is polulated via nuclear reactions in the interiors of stars, the emitted photons would immediately be absorbed by the surrounding matter - would never escape the stellar production site and $\gamma$ never reach earth.
+
+But if \Al{26} is synthesized via nuclear reactions in the stellar interior the long half-life of the ground state gives good opportunity to be expelled from the star into the interstellar medium before decaying to the excited state of \Mg{26}. Then we would be able to see the decay og \Mg{26} on earth. 
+
+We have observed the $\gamma$-lines from \Mg{26} $\Rightarrow$ nucleosynthesis is currently active (since the timescale ogf \Al{26} half-life is shorter than galactic chemical evolution $\approx 10^10$ y.
+
+???
+
+
+
+\section*{Chapter 1.8}
+\section*{Chapter 1.8.1}
+\section*{Chapter 1.8.2}
+\section*{Chapter 1.8.3}
+
+
+
+\section*{Chapter 1.8.4}
+
+
 
 
 
